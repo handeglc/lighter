@@ -62,7 +62,7 @@ export default class Calculate extends Component {
         }
         let basal = 655 + (9.6* this.state.weight) + (1.8 * this.state.height ) - (4.7 * this.state.age);
         this.setState({basal : basal,
-            message: "Your basal methobolism needs "+ basal + " calories per day."});
+            message: "Your basal metabolism needs "+ basal + " calories per day."});
         Keyboard.dismiss();
     };
 
@@ -116,7 +116,7 @@ export default class Calculate extends Component {
           />
          <Button
           onPress={this.calculate_basal}
-          title="Calculate basal methabolism."
+          title="Calculate basal metabolism."
           color="#5642CA"
         />
            <TextInput
